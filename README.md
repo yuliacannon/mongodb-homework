@@ -1,5 +1,13 @@
 # mongo-homework
 
+### Installation
+1. Clone repo
+2. Open project directory
+3. run ```npm install``` command
+3. run ```npm start``` command
+
+### Task
+
 1. Implement CRUD for users
   - 1.1 Use already created empty user schema, model, controller, route as example
 
