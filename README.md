@@ -1,7 +1,7 @@
 # mongo-homework
 
 1. Implement CRUD for users
-  1.1 Use already created empty user schema, model, controller, route as example
+  - 1.1 Use already created empty user schema, model, controller, route as example
 
 #### User Schema
 
@@ -34,7 +34,7 @@ to get all articles that created by specific user.
 
 
 2. Implement CRUD for articles
-  2.1 Create schema, model, controller, routes
+  - 2.1 Create schema, model, controller, routes
 
 #### Article Schema
 
