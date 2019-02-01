@@ -10,16 +10,16 @@ function createArticle(req, res, next) {
           description: req.body.description,
           'owner.user': req.body.owner,
           'category.enum': req.body.category
-          ///createdAt: Date.now,
-          //updatedAt: Date.now
-  
         },
         (error, article) => {
           if (error) {
-            res.status(400).send('Unable to create article')
+            res.status(400).send('Unable to create article/ incorrect data')
           }
+          User.update({id:req.body.owner}, {$inc: {numberOfArticles: 1}}); //to fix
           res.status(200).json(article);
         })
+    
+    
 }
 
 function editArticle (req, res, next){

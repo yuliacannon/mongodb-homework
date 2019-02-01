@@ -66,12 +66,14 @@ function deleteUser(req, res, next) {
   })
 }
 
-function showArticles (req, res, next) {
+function showArticles (req, res, next) { 
   const id = req.params.id;
-  User.findByIdAndRemove(id ,  (err, user) => {
+  User.findById(id )
+  .populate('owner.user')
+  .exec(  (err, article) => {
     if (err) {
       return next(new Error('User was not found'))
     }
-    res.json('Successfully removed')
+    res.json(article)
   })
 }

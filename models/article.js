@@ -29,7 +29,7 @@ const ProductSchema = new Schema({
        
     },
     category: {
-        //required: true,
+        //required: true, //to fix
         enum: ['sport', 'games', 'history']
         
     },

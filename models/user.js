@@ -30,11 +30,7 @@ const ProductSchema = new Schema({
     nickname: {
         type: String, 
         required: false
-    },
-    articles:[{
-        type: Schema.Types.ObjectId,
-        ref: 'Article'
-    }]
+    }
 });
 
 module.exports = mongoose.model('User', ProductSchema);
